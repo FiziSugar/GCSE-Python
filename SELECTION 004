@@ -8,3 +8,16 @@ if colour == "red" and "RED": #Dear Mr Spero, the code does not work as intended
     print("I like red too!")
 else:
     print("I don't like " + str(colour) + ", " + str(colour) + " is for loosers")
+
+#Corrected Version 2:
+
+#Ask the user to enter their favourite colour
+#If they enter “red”,““RED” or “Red” display the message “I like red too”
+#Otherwise display the message “I don’t like {colour}, {colour} is for losers”
+
+colour = input("What is your favourite colour? ")
+
+if colour == "red" or colour == "RED" or colour == "Red": 
+    print("I like red too!")
+else:
+    print("I don't like " + str(colour) + ", " + str(colour) + " is for loosers")
