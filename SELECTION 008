@@ -1,0 +1,16 @@
+#Ask the user to enter a number 1, 2 or 3
+#If the enter a 1, display the message “thank you”
+#If they enter a 2, display “well done, you're so smart”
+#If they enter a 3, display “amazing, you are so good at this”
+#If they enter anything else, display “really? What is wrong with you??”
+
+num = int(input("Enter a number: "))
+
+if num == 1:
+    print("Thank you")
+elif num == 2:
+    print("Well done, you're so smart")
+elif num == 3:
+    print("Amazing, you're so good at this!")
+else: 
+    print("Really? What is wrong with you?")
