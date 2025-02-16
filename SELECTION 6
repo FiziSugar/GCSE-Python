@@ -1,0 +1,16 @@
+#Ask the user’s age.
+#If they are 18 or older, display the message “you can vote”’.
+#If they are aged 17, display the message “you can learn to drive”
+#If they are 16, display the message “you can buy a lottery ticket”
+#If they are under 16, display the message “you can go trick or treating”
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You can vote")
+elif age == 17:
+    print("You can drive")
+elif age == 16:
+    print("You can buy a lottery ticket")
+elif age < 16:
+    print("You can go trick or treating!")
