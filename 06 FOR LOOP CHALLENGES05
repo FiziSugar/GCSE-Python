@@ -1,0 +1,10 @@
+#Ask a user to enter a number below 50
+#Then count down from 50 to that number
+#Make sure you show the number that they entered in the output
+#HINT: use the function “range(n,f,d)”
+#Where, n is a starting number and f can be a sum and d is an increment or subtraction)
+
+num = int(input("Enter a number below 50: "))
+
+for i in range(num,49,-1):
+    print(i)
