@@ -1,0 +1,16 @@
+#Ask how many people the user wants to invite to a party
+#If they enter a number below 10, ask for the names and after each name display“ {name} has been invited”
+#If they enter a number which is 10 or higher, display the message “too many people”
+#HINT: use the function “range(n,f)”
+#Where, n is a starting number and f is a finished number (n and f can be a variable)
+
+partynum = int(input("How many people do you want to invite to the party: "))
+
+if partynum < 10: #After inputting a number smaller and 10 (eg 8), I have to run the code 8 times for it to reset and start the code from the beginning. Why won't it just start from the beginning of the code from when I press run again? 
+    for i in range(partynum): #I have one parameter, instead of two (as instructed), is this still acceptable?
+        name = input("What is their name: ")
+        print(name, "has been invited")
+elif partynum >= 10:
+        print("Too many people!")
+
+
