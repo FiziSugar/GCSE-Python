@@ -1,0 +1,16 @@
+#Initialise a variable called “total” to the integer O.
+#Using a for loop, ask a user to enter five numbers and after each input ask them if they want that number included — y/n
+#If they, do then add the number to the total.
+#If they do not want it included, do not add it to the total
+#After they have entered all five numbers, display the total
+
+total = 0
+
+for i in range(5):
+    num = int(input("Enter a number: "))
+    yesno = input("Do you want this number included y/n: ")
+    if yesno == "y":
+        total = total + num
+    else: 
+        total = total
+print(total)
