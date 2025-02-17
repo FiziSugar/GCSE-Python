@@ -1,0 +1,10 @@
+#Ask a user to enter their name
+#Display their name 3 times
+
+#HINT: use the function “range(n,f)”
+#Where, n is a starting number and f is a finished number
+
+name = input("What is your name? ")
+
+for i in range(0,3):
+    print(name)
