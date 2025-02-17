@@ -1,0 +1,11 @@
+#Ask a user to enter their name
+#Ask a user to enter a number (as an int)
+#The code should display their name the number of times that they entered above
+#HINT: use the function “range(n,f)”
+#Where, n is a starting number and f is a finished number (f can be a variable)
+
+name = input("Enter your name: ")
+num = int(input("Enter a number: "))
+
+for i in range(num): #The instructions expect two parameters, when I have only got one. Let me know if this is incorrect and I'll fix it.
+    print(name)
