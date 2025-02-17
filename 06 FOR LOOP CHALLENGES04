@@ -1,0 +1,9 @@
+#Ask a user to enter a number between 1 and 12
+#Display the times table for that number
+#HINT: use the function “range(n,f)”
+#Where, n is a starting number and f is a finished number (n and f can be a variable)
+
+num = int(input("Please enter a number between 1 and 12: "))
+multiply = 12
+for i in range(multiply):
+    print(num * i)
