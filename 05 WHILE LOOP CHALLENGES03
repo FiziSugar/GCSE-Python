@@ -1,0 +1,58 @@
+#Old:
+
+#Ask the user to enter a number
+#Outside the loop, create a variable that holds the first number
+#Outside the loop create variable that stores the number entered in the step above into a variable called “total”
+#Outside the loop, create a variable that holds the value "y"
+#Inside the loop, ask to enter another number
+#Add the two numbers together and then ask if they want to add another number.
+#If they enter “y”, ask them to enter another number and keep adding numbers until they do not answer “y”.
+#Once the loop has stopped, display the total
+
+num = int(input("Enter a number: "))
+total = num
+
+confirmation = "y"
+
+while confirmation == "y":
+    num2 = int(input("Enter another number: "))
+    total = num + num2
+    
+    confirmation = input("Do you want to add another number: ")
+    if confirmation == "y":
+        num2 = int(input("Enter another number: "))
+        total = num + num2
+print(total)       
+
+    
+
+#New:
+
+#Ask the user to enter a number
+#Outside the loop, create a variable that holds the first number
+#Outside the loop create variable that stores the number entered in the step above into a variable called “total”
+#Outside the loop, create a variable that holds the value "y"
+#Inside the loop, ask to enter another number
+#Add the two numbers together and then ask if they want to add another number.
+#If they enter “y”, ask them to enter another number and keep adding numbers until they do not answer “y”.
+#Once the loop has stopped, display the total
+
+num = int(input("Enter a number: "))
+total = num
+
+confirmation = "y"
+
+while confirmation == "y":
+    newnum = int(input("Enter another number: "))
+    total = total + newnum
+    confirmation= input("Do you want to add another number?")
+    if confirmation == "y":
+        newnum = int(input("Enter another number: "))
+        total = total + newnum
+    else: 
+        print(total)
+#Dear Mr Spero, I struggled quite a bit with this task. I don't think I have even done it correctly, do let me know (if you can). I've pasted this code + my old code into github so you can see where my confusion lies. 
+      
+
+    
+
