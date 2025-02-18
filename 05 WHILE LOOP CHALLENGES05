@@ -1,0 +1,21 @@
+#Create a variable called “compnum” and set the value to 50
+#Ask the user to enter a number
+#Create a variable called count and set it to 1
+#While their guess is not the same as the compsum value, tell them that if their guess is too low or too high
+#Ask them to have another guess.
+#Count must increment by 1 eveyrtime the user has a guess
+#Ask them is they want another guess
+#If they enter the same value as compnum, display the message “well done, you took {count} attempts”
+
+compsum = 50
+num = int(input("Enter a number: "))
+count = 1
+
+while num != compsum:
+    if num > compsum:
+        print("Too high")
+    elif num < compsum:
+        print("Too low")
+    num = int(input("Have another guess: "))
+    count = count + 1
+print("Well done, you took", count, "attempts!")
