@@ -1,0 +1,20 @@
+#Import random
+#Create a list with heads or tails (h or t)
+#Use random to generate h or t and store it in a variable called “coin”
+#Ask the user to guess h or t (and store it in a variable)
+#If the user guesses correctly, display “you win”
+#Otherwise, display “bad luck”
+#If the coin turns out to be the other choice, either display “it was heads” or “it was tails”
+
+import random
+coinlist = ["heads", "tails"]
+
+coin = random.choice(coinlist)
+
+guess = input("Guess: Heads or tails? ")
+
+if guess == coin:
+    print("You win!")
+else:
+    print("Bad luck")
+    print("It was", coin)
