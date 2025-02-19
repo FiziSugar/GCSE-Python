@@ -1,3 +1,18 @@
+#New after help from Mr Spero: 
+num = int(input("Enter a number: "))
+total = num
+
+confirmation = "y"
+
+while confirmation == "y":
+    newnum = int(input("Enter another number: "))
+    total = total + newnum
+    confirmation= input("Do you want to add another number?")
+    
+print(total)
+
+
+
 #Old:
 
 #Ask the user to enter a number
