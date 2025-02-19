@@ -1,0 +1,17 @@
+#Use the random module to:
+#Generate a random integer between 1 and 10 and store it in a variable called num
+#Set a variable called “correct” to the Boolean “False”
+#While correct is equal to false, ask the user to guess the number
+#If the user guesses the number correctly, change correct to the Boolean “True”
+
+import random
+
+num = random.randint(1,10)
+
+correct = False
+
+while correct == False:
+    guess = int(input("Guess the number: "))
+    if guess == num:
+        correct = True
+        print("nice")
