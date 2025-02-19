@@ -1,0 +1,8 @@
+#Import random
+#In a variable, generate an integer between 1 and 1000
+#Display the integer
+
+import random
+
+number = random.randint(1,1001) 
+print(number)
