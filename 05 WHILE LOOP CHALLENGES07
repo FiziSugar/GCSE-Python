@@ -1,0 +1,36 @@
+#Set a variable to the value of 10
+
+#Using the song “10 green bottles”, display the lines
+
+#“There are {number} green bottles hanging on the wall, {number} green bottles hanging on the wall, And if one green bottle should accidentally fall”
+
+#Then ask the user “How may green bottles will be hanging on the wall?”
+
+#If the user answers correctly, display the message “There'll be {number} green bottles hanging on the wall.”
+
+#If they answer incorrectly, display the message “No, try again” until they get it right.
+
+#When the number of green bottles gets down to 0, display the message “There'll be no green bottles hanging on the wall.”
+
+number = 10
+
+count = 0
+
+while number > 0:
+
+    print("There are", number, "green bottles hanging on the wall,", number, "green bottles hanging on the wall, And if one green bottle should accidentally fall")
+
+    
+
+    how_many = int(input("How many green bottles are hanging on the wall? "))#Cast for int!
+
+    if how_many == number-1:
+        number = number-1
+        print("There'll be", number, "green bottles hanging on the wall." )
+
+    else:
+
+        print("No, try again")
+
+        how_many = int(input("Get this right: How many green bottles are hanging on the wall? "))#Cast for int!
+print("There'll be no green bottles hanging on the wall")
