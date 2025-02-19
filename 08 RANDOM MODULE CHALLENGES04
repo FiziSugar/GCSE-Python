@@ -1,0 +1,27 @@
+#Import random
+#In a variable called “num” generate a random integer between 1 and 5
+#Ask the user to pick a number
+#If they guess correctly, display the message “well done”
+#Otherwise, tell them they are too high or too low and ask them to try again
+#If they guess correctly on their second guess, display “correct”
+#Otherwise display “You lose”
+
+import random
+
+num = random.randint(1,6) #I thought this would only go to 5 as the stop value is exclusive?
+guess = int(input("Pick a number: "))
+
+if guess == num:
+    print("Well done!")
+    quit()
+elif guess > num:
+    print("Your guess is too high")
+elif guess < num:
+    print("Your guess is too small")
+
+guess2 = int(input("Have another guess: "))
+
+if guess2 == num:
+    print("Correct")
+else:
+    print("You loose")
