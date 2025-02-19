@@ -1,0 +1,11 @@
+#Import random
+#Create a list with 5 colours (as a string)
+#In a variable, use random to select on of the colours
+#Display the randomly selected colour
+
+import random
+
+colours = ["green", "blue", "violet", "red", "yellow" ]
+
+select = random.choice(colours)
+print(select)
