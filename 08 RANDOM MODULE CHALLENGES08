@@ -1,0 +1,19 @@
+#Create a variable called score and set it to 0
+#Create a count based loop that uses the range function
+#In the loop, make an adding maths quiz that asks five questions by randomly generating two whole numbers to make the question e.g.
+#Num1 + Num2
+#Ask the user to enter the answer
+#If they get it right, add a point to their score
+#At the end of the quiz, tell them how many they got correct out of five
+#HINT, you will need a for loop that uses the range function
+import random 
+score = 0
+
+for i in range(5):
+    num1 = random.randint(1,100)
+    num2 = random.randint(1,100)
+    correct = num1 + num2 
+    question = int(input(f"What is {num1} + {num2} ?: "))
+    if question == correct:
+        score = score + 1
+print("You got", score, "out of 5")
