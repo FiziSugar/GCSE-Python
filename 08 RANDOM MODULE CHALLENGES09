@@ -1,0 +1,36 @@
+#Display five colours and ask the user to pick one
+#If they pick the same as the program has chosen, say “well done”
+#Otherwise display a witty answer which involves the correct colour e.g. “I bet youare GREEN with envy” or “you are probably feeling BLUE right now”
+#Ask them to guess again: if they have still NOT got it right, keep giving them the same clue and ask the user to enter a colour until they guess correctly
+#HINT: you will need a while loop
+import random
+many_colours = ["blue", "green", "yellow", "red", "purple"]
+random_colour = random.choice(many_colours)
+print(many_colours)
+
+pick_colour = input("Pick a colour: ")
+
+
+while pick_colour != random_colour:
+    pick_colour = input("Pick again: ")
+    if random_colour == "green" and pick_colour != random_colour:
+        print("I bet you are GREEN with envy ")
+    elif random_colour == "blue" and pick_colour != random_colour:
+        print("You are proably feeling BLUE right now")
+    elif random_colour == "yellow" and pick_colour != random_colour:
+        print("Don’t feel bad; just keep your sunny yellow outlook shining bright!")
+    elif random_colour == "red" and pick_colour != random_colour:
+        print("I hope you’re not seeing red after that loss—stay calm!")
+    elif random_colour == "purple" and pick_colour != random_colour:
+        print("I bet you’re feeling purple—like you’ve been bruised by that wrong answer!")
+
+
+if pick_colour == random_colour:
+    print("Well done")
+    quit()
+
+
+    
+   
+
+
