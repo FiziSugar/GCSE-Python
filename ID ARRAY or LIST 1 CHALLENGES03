@@ -16,5 +16,7 @@ while sentryVariable == False:
         name_list.append(names)
     elif names == "no":
         sentryVariable = True
-print(f"You have invited {name_list} to the party")
+num_people = len(name_list)
+print(f"You have invited {num_people} people to the party")
+quit()
 
