@@ -1,0 +1,19 @@
+#Create a list containing the titles of four TV programmes
+#Display them on separate lines
+#Ask the user to enter another show and a position they wanted it inserted into the list
+#Display the list again, showing all five TY shows in their new positions
+
+#HINT:Ask for the food in separate variables e.g. show |.To pass the data from the variables into the array, put the same variable in the array e.g. TvShow 2 [show 1, show2, show3, show4, show5]
+#HINT:You will need to use For loops too
+
+programmes = ["Peaky Blinders", "Spongebob", "Family Guy", "The Simpsons"]
+
+for i in programmes:
+    print(i)
+
+show = input("Enter another show: ")
+index = int(input("Where in the code would you like to put this show?"))
+
+programmes.insert(index,show)
+print(programmes)
+
