@@ -1,0 +1,21 @@
+#Create an empty array called food
+#Ask the user to input 4 types of food e.g. kebab
+#Pass the inputted food into the list
+#Display the list (on one line)
+#Ask the user which food to delete e.g. 2 will delete the second food in the array
+#Delete the chosen food as above
+#Display the array (with the chosen food now deleted)
+
+food = []
+
+for i in range(4):
+    types_food = input("Enter four types of food: ")
+    food.append(types_food)
+print(food)
+
+delete = int(input("What food do you want to delete? "))
+
+del food[delete]
+print(food)
+
+#Dear Mr Spero, you said in the instructions that if you put "2" it will delete the second food. Here it deletes the 3rd food. I know why this is the case, but would you like me to amend the code so it does that, or does this code suffice? I figured this was just a mistake in the instructions.
