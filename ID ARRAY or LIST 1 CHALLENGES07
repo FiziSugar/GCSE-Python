@@ -1,0 +1,15 @@
+#Create a ID array that hold 5 integers of your choosing
+#Display the ID array
+#Create some code that asks the user for an index
+#Create some code that asks the user to input an integer
+#The code should change the existing integer from the first step, to the new integer that the user inputted in the step above
+#Display the updated ID array
+
+ID = [1,2,3,4,5]
+print(ID)
+
+index = int(input("What is your index? "))
+integer = int(input("Enter an integer: "))
+
+ID[index] = integer
+print(ID)
