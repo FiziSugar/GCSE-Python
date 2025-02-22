@@ -1,0 +1,18 @@
+#Create an empty array called “nums”
+#Ask the user to enter a number numbers and add it to the end of the nums list and then display the list
+#Once they have entered 3 numbers, ask them if they still want the last number they entered saved
+#If they say “no” remove the last item from the list
+#Display the list of numbers
+
+num = []
+
+for i in range(3):
+    enter_num = int(input("Enter a number: "))
+    num.append(enter_num)
+print(num)
+
+confirmation = input("Do you still want the last number entered saved? ")
+
+if confirmation == "no":
+    del num[-1]
+print(num)
