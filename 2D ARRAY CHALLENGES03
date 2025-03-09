@@ -1,0 +1,22 @@
+#1. Copy this code for a 2D array (you might need to fix the speechmarks):  
+#2. Stuff = [  
+#3.     [“1”, “2”, “3”, “4”],  
+#4.     [“a”, “b”, “c”, “d”],  
+#5.     [“I”, “II”, “III”, “IV”],  
+#6. ]  
+#7. Display this 2D array to the screen  
+#8. Using indexing, write a line of code that changes “c” to “Croydon”  
+#9. Display this 2D array to the screen  
+
+Stuff = [  
+     ["1", "2", "3", "4"],  
+     ["a", "b", "c", "d"],  
+     ["I", "II", "III", "IV"],
+]
+
+print(Stuff)
+
+Stuff[1][2] = "Croydon"
+
+print(Stuff)
+
