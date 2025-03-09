@@ -1,0 +1,14 @@
+#1. Create some code that sets up an empty 1D array called MySpaceCompany  
+#2. Display your empty array  
+#3. Ask the user to input 3 types of space vehicle  
+#4. Append the inputs into the 1D array  
+#5. Display the 1D array 
+
+MySpaceCompany = []
+
+print(MySpaceCompany)
+
+for i in range(3):
+    space_vehicle = input("Enter a space vehicle: ")
+    MySpaceCompany.append(space_vehicle)
+print(MySpaceCompany)
