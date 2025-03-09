@@ -1,0 +1,8 @@
+Question 6:
+
+duration = int(input("How many days until the holiday?: "))
+
+weeks = (f"{duration // 7} weeks")
+days = (f" {duration % 7} days")
+print(weeks + days)
+
