@@ -1,0 +1,28 @@
+#1. Execute the code below:  
+#2. EmptyArray = [[0 for column in range(5)] for row in range(2)]  
+#3. print(EmptyArray)  
+#4. Now, change the range (integers) to whatever you want  
+#5. Change the initial 0 to “a”  
+#6. Update the code to allow a user to choose the range (integer) values via input(s)  
+#7. Allow a user to change the range values to an integer of the user’s choice  
+
+EmptyArray = [[0 for column in range(10)] for row in range(3)] 
+
+print(EmptyArray)
+
+EmptyArray[0][0] = "a"
+
+print(EmptyArray)
+
+column_range = int(input("Enter a column range: "))
+row_range = int(input("Enter a row range: "))
+
+EmptyArray = [[0 for column in range(column_range)] for row in range(row_range)]
+
+print(EmptyArray)
+
+#Dear Mr Spero, have I done line 7 as you intended? I am not sure whether I have followed the instruction properly
+
+
+
+
