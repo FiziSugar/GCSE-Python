@@ -1,0 +1,18 @@
+#1. Create some code that sets up an empty 1D array called OuterArray  
+#2. Create some code that sets up an empty 1D array called InnerArray1  
+#3. Create some code that sets up an empty 1D array called InnerArray2  
+#4. Display OuterArray  
+#5. To make a 2D array, append InnerArray1 to OuterArray  
+#6. Update your 2D array, append InnerArray2 to OuterArray  
+#7. Display OuterArray. It should look like this: `[[], []]`
+
+OuterArray = []
+InnerArray1 = []
+InnerArray2 = []
+
+print(OuterArray)
+
+OuterArray.append(InnerArray1)
+OuterArray.append(InnerArray2)
+
+print(OuterArray)  
