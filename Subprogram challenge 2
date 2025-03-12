@@ -1,0 +1,17 @@
+#Subprogram challenge 02 (GCSECS.com)
+#This subprogram is a procedure
+#Fix the lines of code below
+#Fix any syntax errors
+#The subprogram has indentation errors
+#The working solution should allow the user...
+#...to enter two numbers and add them..
+#...then display the total
+
+def adding(num1, num2):
+    total =  num1 + num2
+    print(total)
+
+number1=int(input("Enter a number: "))
+number2=int(input("Enter another number: "))
+   
+adding(number1, number2)
