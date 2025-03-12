@@ -1,0 +1,20 @@
+#Subprogram challenge 04 (GCSECS.com)
+#This subprogram is a procedure
+#Fix the lines of code below
+#Fix any syntax errors
+#The program is not in the correct order
+#The subprogram has indentation errors
+#The working solution should allow the user...
+#..to enter a name and the code sings...
+#..the happy birthday song
+
+def happyBirthday(names):
+    print("Happy birthday to you")
+    print("Happy birthday to you")
+    print("Happy birthday dear", names)
+    print("Happy birthday to you")
+
+name = input("Enter birthday name:>>>")
+happyBirthday(name)
+
+
