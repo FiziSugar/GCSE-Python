@@ -1,0 +1,12 @@
+#Subprogram challenge 01 (GCSECS.com)
+#This subprogram is a procedure
+#Fix the lines of code below
+#Check for correct indentation
+#Check the code is in the correct order
+#When fixed, the code should display…
+#... Happy new year!
+
+
+def newYear():
+    print("Happy new year!")
+newYear()
