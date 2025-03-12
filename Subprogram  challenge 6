@@ -1,0 +1,27 @@
+#Subprogram challenge 06 (GCSECS.com)
+#Test the code below, it should work
+#Add another function that asks..
+#...What is your favourite food
+#Your code should return this data..
+#..To the "start()" subprogram and...
+#display "your favourite food is.."
+
+def getName():
+  name = str(input("Enter first name >>>"))
+  return name
+
+def getAge():
+  age = int(input("Enter your age >>>"))
+  return age
+
+def favFood():
+    food = str(input("What is your favourite food? "))
+    return food
+
+def start():
+  print("you name is:",getName())
+  print("you age is:",getAge())
+  print("Your favourite food is:", favFood())
+
+  
+start()
