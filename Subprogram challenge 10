@@ -1,0 +1,80 @@
+#Subprogram challenge 10 (GCSECS.com)
+#upgrade your code in challenge 09 by..
+#Creating a subprogram that does adding
+#Creating a subprogram that does multiplying
+#Creating a subprogram that does subtracting
+#Creating a subprogram that does division
+#Your program should complete a caluculation...
+#..then loop back to ask for other calculation to be performed
+
+
+PI = 3.141592653
+
+def division():
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter a number you would like to divide by: "))
+    answer = num1 / num2 
+    print(answer)
+    return answer
+
+def addition():
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter a number you would like to add by: "))
+    answer = num1 + num2 
+    print(answer)
+    return answer 
+    
+
+def multiplication():
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter a number you would like to multiply by: "))
+    answer = num1 * num2 
+    print(answer)
+    return answer 
+
+def subtraction():
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter a number you would like to subtract by: "))
+    answer = num1 - num2 
+    print(answer)
+    return answer 
+
+def circumference(radius):
+    circumference = radius * 2 * PI
+    print(f"The circumference is {circumference}")
+    return circumference #Dear Mr Spero, why must I print before I return for it to actually print it?
+
+def circleArea(radius):
+    area = PI * radius * radius
+    print(f"The area is {area}")
+    return area
+
+def MTT(number):
+    for i in range(13):
+        print(i * number)
+        #If I put "return number" on this line, it doesn't work as intended, why?
+
+loop = True
+
+while loop == True:
+    choice = input("Do you want to work with cirlces (C) or mathematical times tables (MTT) or multiplication or division or subtraction or addition: ") 
+    if choice == "MTT":
+        number = int(input("What timestable would you like?: "))
+        MTT(number)
+    elif choice == "C":
+        radius = int(input("Enter a radius: "))
+        circumference(radius)
+        circleArea(radius)
+    elif choice == "Multiplication":
+        multiplication()
+    elif choice == "Addition":
+        addition()
+    elif choice == "Subtraction":
+        subtraction()
+    elif choice == "Division":
+         division()    
+
+#Dear Mr Spero, did I overcomplicate this?
+
+
+
