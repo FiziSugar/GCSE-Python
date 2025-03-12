@@ -1,0 +1,26 @@
+#Subprogram challenge 08 (GCSECS.com)
+#upgrade the code in challenge 07 by..
+#..creating a second Function that..
+#..works out the circumference of a circle..
+#..based in an inputted number..
+#..using the calculation: circumference = 2*PI*radius
+#Your program should output the Area and circumference
+
+PI = 3.141592653
+def circumference(radius):
+    circumference = radius * 2 * PI
+    print(f"The circumference is {circumference}")
+    return circumference #Dear Mr Spero, why must I print before I return for it to actually print it?
+
+def circleArea(radius):
+    area = PI * radius * radius
+    print(f"The area is {area}")
+    return area
+
+radius = int(input("Enter a radius: "))
+
+circumference(radius)
+circleArea(radius)
+
+
+
