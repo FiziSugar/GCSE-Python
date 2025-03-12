@@ -1,0 +1,31 @@
+#Subprogram challenge 09 (GCSECS.com)
+#upgrade your code in challenge 08 by..
+#..asking the user if they want to work..
+#..with "circles" or "mathematical times tables"
+#If they choose times table, ask them which one
+#If they choose e.g. 3 times table, display it
+#Be sure to use a for loop for the times table
+
+PI = 3.141592653
+def circumference(radius):
+    circumference = radius * 2 * PI
+    print(f"The circumference is {circumference}")
+    return circumference #Dear Mr Spero, why must I print before I return for it to actually print it?
+
+def circleArea(radius):
+    area = PI * radius * radius
+    print(f"The area is {area}")
+    return area
+
+choice = input("Do you want to work with cirlces (C) or mathematical times tables (MTT) ?: ") 
+if choice == "MTT":
+    num = int(input("Which times table would you like to display?: "))
+    for i in range(13):
+        print(i * num)
+elif choice == "C":
+    radius = int(input("Enter a radius: "))
+    circumference(radius)
+    circleArea(radius)
+
+
+
