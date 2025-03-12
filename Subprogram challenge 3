@@ -1,0 +1,18 @@
+#Subprogram challenge 03 (GCSECS.com)
+#This subprogram is a procedure
+#Fix the lines of code below
+#Fix any syntax errors
+#The subprogram has indentation errors
+#The working solution should allow the user...
+#...to enter two numbers which it multipliues..
+#...and then displays the answer
+
+def multiply(num1, num2):
+    total = num1*num2
+    print(total)
+
+
+
+number1=int(input("Enter a number: "))
+number2=int(input("Enter another number: "))
+multiply(number1, number2)
