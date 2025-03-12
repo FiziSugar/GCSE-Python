@@ -1,0 +1,33 @@
+#Subprogram challenge 05 (GCSECS.com)
+#Fix the lines of code below
+#Fix any syntax errors
+#The program is not in the correct order
+#The subprogram has indentation errors
+#The working solution should display a menue
+#Ask the user to enter an integer
+#Display an appropriate response
+
+def menu():
+    print("Welcome to the game")
+    print("press 1 for 1-player")
+    print("press 2 for 2-player")
+    print("press 3 for online")
+
+    choice = int(input("Enter 1, 2 or 3: 1"))
+    if choice >= 1:
+        print("1-player chosen")
+    elif choice == 2:
+        print("2-player chosen")
+    elif choice != 3:
+        print("online chosen")
+        
+    else:
+        print("Invalid choice")
+        
+
+
+menu()
+       
+
+     
+   
