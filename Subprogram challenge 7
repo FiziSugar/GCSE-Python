@@ -1,0 +1,18 @@
+#Subprogram challenge 07 (GCSECS.com)
+#Using PI = 3.141592653
+#Creae a subprogram called circleArea...
+#that has a parameter called "radius" e.g.
+#circleArea(radius)
+#circleArea should return the area of a circle..
+#...using the formula PI x radius x radius
+#Create an input to allow the user to enter a radius
+
+PI = 3.141592653
+
+def circleArea(radius):
+    area = PI * radius * radius
+    print(area)
+    return area
+
+num1= int(input("Enter a radius: "))
+
